@@ -6,56 +6,26 @@
     <title>javascript</title>
 </head>
 <body>
-    <!-- operators -->
-<p id="fruit"></p>
+    <p id="objectmethod">Object  method</p>
+ <script>
+  const student = {
+    firstname : "Agalya",
+    lastname:"Muruganantham",
+    age:"20",
+    DOB:"10/05/2004",
+    city:"Thanjavur"
+    }
+    document.getElementById('objectmethod').innerHTML =  student.firstname + " "+ " is " + student.age +  " years old. ";
+ </script>
+
+<p id="arraymethod2">Array Method</p>
 <script>
-    var f1=40;
-    var f2=39;
-    let total= f1+f2
-    document.getElementById('fruit').innerHTML = "The total number is:"+total;
+const person3= ["Agalya","20","cs","STET womens college","mannargudi."];
+const person4= ["Amsavarthani","21","cs","STET womens college","mannargudi."];
+const person5= ["Ruban","21","cs","PRIST university","Thanjavur."];
+const person6= ["Bavya","21","cs","STET womens college","mannargudi."];
+document.getElementById('arraymethod2').innerHTML= [person4];
 </script>
-
-<p id="fruit1"></p>
-<script>
-    var f1=67;
-    var f2=39;
-    let total1= f1-f2
-    document.getElementById('fruit1').innerHTML = "The total number is:"+total1;
-</script>
-
-<p id="fruit2"></p>
-<script>
-    var f1=67;
-    var f2=39;
-    let total2= f1*f2
-    document.getElementById('fruit2').innerHTML = "The total number is:"+total2;
-</script>
-
-<p id="vegetables"></p>
-<script>
-    var veg1=7;
-    var veg9=63;
-    let total3= veg9/veg1;
-    document.getElementById('vegetables').innerHTML = "The total number is:"+total3;
-</script>
-
-<p id="vegetable"></p>
-<script>
-    var veg1=7;
-    var veg9=63;
-    let total4= veg9%veg1;
-    document.getElementById('vegetable').innerHTML = "The total number is:"+total4;
-</script>
-
-<p id="veg"></p>
-<script>
-    var veg1=7;
-    var veg2=2;
-    let result= veg1**veg2;
-    document.getElementById('veg').innerHTML = "The total number is:"+result;
-</script>
-
-
-    
 </body>
+<script src="main.js"></script>
 </html>
