@@ -154,7 +154,7 @@ console.log(not)
       var val= null;
       console.log(val)
 
-      
+      // form
       function MyButton(event) {
         event.preventDefault(); 
       
@@ -170,5 +170,106 @@ console.log(not)
         <p><b>Password:</b> ${password}</p>`;
         document.getElementById('output').innerHTML = outputText;
         output.style.paddingLeft="15rem";
-
       }
+
+      // Array Desturucturing
+
+      let Name= ["Agalya", "Sowmiya", "Nila", "Keerthi", "Tamil"];
+      const[first,second,third,fourth,fifth]=Name;
+      console.log(Name.first);
+
+
+
+
+
+
+      // for loop
+
+      for(count=1;count<=20;count=count+1)
+        {
+            console.log("agalya")
+        }
+        // reverse number
+
+      for(let count=15;count >= 1;count--)
+        {
+            console.log(count)
+        }
+    
+
+
+//Array  Destructuring Method:
+// const fruits = ['apple', 'banana', 'cherry'];
+// const [first, second, third] = fruits;
+// console.log(first,second);  
+
+
+
+ //for loop
+ for(let i=0;i<5;i++)
+  console.log(i);
+
+ //for in loop
+ //object method:
+//  const person = { name: 'Agalya', age: 20, place: 'Thanjavur' };
+
+// for (let key in person) {
+//   //concat method
+//     console.log(key + ': ' + person[key]);
+// }
+
+// //Array Method:
+let colors = ['red','green','black'];
+
+// for(let key in colors){
+//   console.log(colors [key]);
+// }
+
+//for of method:
+for(let color of colors){
+  console.log("color:"+ color);
+}
+
+//while loop
+let i = 0;
+
+while (i < 10) {
+    console.log(i);
+    i++;
+}
+
+//do while
+// let i = 0;
+
+// do {
+//     console.log(i);
+//     i++;
+// } while (i < 5);
+
+
+//break
+for (let i = 0; i < 10; i++) {
+  if (i === 5) {
+      break; 
+  }
+  console.log(i);
+}
+
+//continue
+for (let i = 0; i < 5; i++) {
+  if (i === 2) {
+      continue; 
+  }
+  console.log(i);
+}
+
+
+
+
+
+        
+    
+      
+        
+        
+        
