@@ -153,7 +153,6 @@ console.log(not)
 
       var val= null;
       console.log(val)
-
       // form
       function MyButton(event) {
         event.preventDefault(); 
@@ -174,9 +173,9 @@ console.log(not)
 
       // Array Desturucturing
 
-      let Name= ["Agalya", "Sowmiya", "Nila", "Keerthi", "Tamil"];
-      const[first,second,third,fourth,fifth]=Name;
-      console.log(Name.first);
+      // let Name= ["Agalya", "Sowmiya", "Nila", "Keerthi", "Tamil"];
+      // const[first,second,third,fourth,fifth]=Name;
+      // console.log(Name.first);
 
 
 
@@ -221,14 +220,14 @@ console.log(not)
 // //Array Method:
 let colors = ['red','green','black'];
 
-// for(let key in colors){
-//   console.log(colors [key]);
-// }
+for(let key in colors){
+  console.log(colors [key]);
+}
 
 //for of method:
-for(let color of colors){
-  console.log("color:"+ color);
-}
+// for(let color of colors){
+//   console.log("color:"+ color);
+// }
 
 //while loop
 let i = 0;
