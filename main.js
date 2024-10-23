@@ -175,11 +175,7 @@ console.log(not)
 
       // let Name= ["Agalya", "Sowmiya", "Nila", "Keerthi", "Tamil"];
       // const[first,second,third,fourth,fifth]=Name;
-      // console.log(Name.first);
-
-
-
-
+      // console.log(first);
 
 
       // for loop
@@ -198,24 +194,25 @@ console.log(not)
 
 
 //Array  Destructuring Method:
-// const fruits = ['apple', 'banana', 'cherry'];
-// const [first, second, third] = fruits;
-// console.log(first,second);  
 
-
+const fruits = ['Apple', 'Banana', 'Cherry'];
+const [firstFruit, secondFruit, thirdFruit] = fruits;
+console.log(firstFruit); 
+console.log(secondFruit); 
+console.log(thirdFruit); 
+ 
 
  //for loop
  for(let i=0;i<5;i++)
   console.log(i);
 
  //for in loop
- //object method:
-//  const person = { name: 'Agalya', age: 20, place: 'Thanjavur' };
-
-// for (let key in person) {
-//   //concat method
-//     console.log(key + ': ' + person[key]);
-// }
+//  object method:
+ const person = { name: 'Agalya', age: 20, place: 'Thanjavur' };
+for (let key in person) {
+  //concat method
+    console.log(key + ': ' + person[key]);
+}
 
 // //Array Method:
 let colors = ['red','green','black'];
@@ -224,7 +221,7 @@ for(let key in colors){
   console.log(colors [key]);
 }
 
-//for of method:
+// for of method:
 // for(let color of colors){
 //   console.log("color:"+ color);
 // }
