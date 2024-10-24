@@ -153,11 +153,10 @@ console.log(not)
 
       var val= null;
       console.log(val)
+
       // form
       function MyButton(event) {
         event.preventDefault(); 
-      
-       
         let userName = document.getElementById('userName').value;
         let password = document.getElementById('password').value;
         console.log("Username: ", userName);
@@ -170,6 +169,9 @@ console.log(not)
         document.getElementById('output').innerHTML = outputText;
         output.style.paddingLeft="15rem";
       }
+
+
+      
 
       // Array Desturucturing
 
@@ -208,7 +210,7 @@ console.log(thirdFruit);
 
  //for in loop
 //  object method:
- const person = { name: 'Agalya', age: 20, place: 'Thanjavur' };
+ const person = {name: 'Agalya', age: 20, place: 'Thanjavur' };
 for (let key in person) {
   //concat method
     console.log(key + ': ' + person[key]);
@@ -259,13 +261,105 @@ for (let i = 0; i < 5; i++) {
   console.log(i);
 }
 
+// Bitwise operators
+var a =5;
+var b= 3;
 
+// And&
+var resadd=a & b;
+console.log(resadd);
 
+// or|
+var resor=a | b;
+console.log(resor);
 
+// not ~
+var resnot=~(a>b);
+console.log(resnot);
 
-        
-    
-      
-        
-        
-        
+// Xor ^
+var resxor=a ^ b;
+console.log(resxor);
+
+// left shift <<
+var num1=5;
+var num2=1;
+var lshift=num1<<num2;
+console.log(lshift);
+
+// Right shift >>
+var num1=5;
+var num2=1;
+var Rshift=num1>>num2;
+console.log(Rshift);
+
+// zero-fill right shift >>>
+var num1=5;
+var num2=1;
+var Zrshift=num1>>>num2;
+console.log(Zrshift);
+
+// Array methods
+
+//  Array Values
+let vegetables =["carrot","onion","chilly","cabbage"]
+console.log(vegetables[0]);
+
+// Array length
+var veg1=["carrot","onion","chilly","cabbage"]
+console.log(veg1.length);
+
+// Array Reverse
+var veg1=["carrot","onion","chilly","cabbage"]
+var reversedVeg=veg1.reverse();
+console.log(reversedVeg);
+
+// Array sort
+var veg1=["carrot","onion","chilly","cabbage"]
+var sortedVeg=veg1.sort();
+console.log(sortedVeg);
+
+// Array at
+var veg1=["carrot","onion","chilly","cabbage"]
+var atVeg=veg1.at(2);
+console.log(atVeg);
+
+// Array fill
+var veg1=["carrot","onion","chilly","cabbage"]
+veg1.fill("potato", 2, 4); 
+console.log(veg1);  
+
+// Array from
+const nums = [1, 2, 3, 4];
+const squared = Array.from(nums, x => x * x);
+console.log(squared); 
+
+// Array join
+    var veg1 = ["Carrot", "Onion", "Cabbage"];
+    var vegString = veg1.join("*");
+    console.log(vegString);
+
+//  Array tostring
+ var numbers = ["Agalya"];
+ var numstring = numbers.toString();
+ console.log(numstring);
+
+// Array pop
+    var veg2 = ["Carrot", "Onion", "chilly","Cabbage"];
+    var vegpop = veg2.pop();
+    console.log(veg2);
+
+    // Array push
+    var vegpush = ["Carrot", "Onion", "chilly","Cabbage"];
+    var vegpush1 = vegpush.push("tomato");
+    console.log(vegpush);
+
+    // Array shift
+    var veg3 = ["Carrot", "Onion", "chilly","Cabbage"];
+    var vegshift = veg3.shift("");
+    console.log(veg3);
+
+    // Array unshift
+    var veg4= ["Carrot", "Onion", "chilly","Cabbage"];
+    var vegunshift= veg4.unshift("ginger");
+    console.log(veg4);
