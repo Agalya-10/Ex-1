@@ -363,3 +363,141 @@ console.log(squared);
     var veg4= ["Carrot", "Onion", "chilly","Cabbage"];
     var vegunshift= veg4.unshift("ginger");
     console.log(veg4);
+
+    // Array forEach
+    var vegetable= ["Carrot", "Onion", "chilly","Cabbage"];
+    vegetable.forEach(function(veg){
+      console.log(veg);
+    });
+
+    // Array copyWithIn
+    let arrnum = [1, 2, 3, 4, 5];
+    arrnum.copyWithin(2,4);
+    console.log(arrnum);
+
+    // Array concat
+    var vegetable1= ["Carrot", "Onion", "chilly","Cabbage"];
+    var vegetable2= ["beetroot", "tomato", "potato"];
+    var vegetablesadd=vegetable1.concat(vegetable2);
+    console.log(vegetablesadd);
+
+    // Array splice
+    var vegetable1= ["Carrot", "Onion", "chilly","Cabbage"];
+    vegetable1.splice(2, 0, "tomato", "potato");
+    console.log( vegetable1); 
+
+    // Array some
+    let some=[1,2,3,4,5,6,7,8,9];
+    let someresult = some.some (num=>num > 3);
+    console.log(someresult);
+
+    // Array slice
+    var vegetable1= ["Carrot", "Onion", "chilly","Cabbage"];
+    vegetable1.splice(2,4);
+    console.log( vegetable1); 
+
+    // Array flat
+    var vegetable1= ["Carrot", ["Onion", "chilly"],[ "tomato", "potato"],"Cabbage"];
+    let flatvegetables =  vegetable1.flat();
+    console.log( flatvegetables); 
+
+    // Array lastIndexOf
+    var vegetable1= ["Carrot", "Onion", "chilly","onion","Cabbage"];
+    let lastIndex =vegetable1.lastIndexOf("onion");
+    console.log(lastIndex);
+
+    // Array of
+    let singleElementArray = Array.of("Agalya");
+    console.log(singleElementArray); 
+
+    // Array every
+    let ages = [19, 18, 20,13];
+    let ageresult = ages.every(function(age) {
+    return age >= 18;
+  });
+  console.log(ageresult); 
+
+  // Array findIndex
+  var vegetable1= ["Carrot", "onion", "chilly","onion","Cabbage"];
+  let longIndex = vegetable1.findIndex(function(findveg) {
+    return findveg.length > 6;
+});
+console.log(longIndex); 
+
+// Array find
+var vegetable1= ["Carrot", "onion", "chilly","onion","Cabbage"];
+let findIndex = vegetable1.find(function(findveg) {
+  return findveg.length > 5;
+});
+console.log(findIndex); 
+
+// Array includes
+
+var veginclude= ["Carrot", "onion", "chilly","Cabbage"];
+let val1 =  veginclude.includes("onion");
+console.log(val1); 
+
+let val2 = veginclude.includes("ginger");
+console.log(val2); 
+
+// Array entries
+var arrent= ["Carrot", "onion", "chilly","Cabbage"];
+let iterator = arrent.entries();
+for (let [index, element] of iterator) {
+    console.log(index, element);
+}
+
+// Array reduce
+let arrreduce = [1, 2, 3, 4];
+let sum = arrreduce.reduce(function(accumulator, currentValue) {
+   return accumulator + currentValue;
+}, 0);
+console.log(sum); 
+
+// Array reduceRight
+
+var words= ["Carrot", "onion", "chilly","Cabbage"];
+let sentence = words.reduceRight(function(accumulator, currentValue) {
+    return accumulator + " " + currentValue;
+});
+console.log(sentence); 
+
+// Array filter
+let arrfilter= [1, 2, 3, 4, 5, 6];
+let evenNumbers = arrfilter.filter(function(num) {
+    return num % 3 === 0; 
+});
+console.log(evenNumbers); 
+
+// Array isArray
+let notArray = ["This is a string"];
+console.log(Array.isArray(notArray)); 
+
+// Array map
+let arrmap = [1, 2, 3, 4];
+let squares = arrmap.map(function(nummap) {
+    return nummap * nummap; 
+});
+console.log(squares); 
+
+// Array keys
+let animals = ["dog", "cat", "fish","cow", "goat", "lion"];
+let keys = Array.from(animals.keys());
+console.log(keys); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
