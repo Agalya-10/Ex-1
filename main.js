@@ -154,25 +154,6 @@ console.log(not)
       var val= null;
       console.log(val)
 
-      // form
-      function MyButton(event) {
-        event.preventDefault(); 
-        let userName = document.getElementById('userName').value;
-        let password = document.getElementById('password').value;
-        console.log("Username: ", userName);
-        console.log("Password: ", password);
-
-        // displyed UI page
-        let outputText = `<h2>Details</h2>
-        <p><b>Username:</b> ${userName}</p>
-        <p><b>Password:</b> ${password}</p>`;
-        document.getElementById('output').innerHTML = outputText;
-        output.style.paddingLeft="15rem";
-      }
-
-
-      
-
       // Array Desturucturing
 
       // let Name= ["Agalya", "Sowmiya", "Nila", "Keerthi", "Tamil"];
