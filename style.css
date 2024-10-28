@@ -37,6 +37,19 @@
     margin-left: 8rem;
     font-weight: 600;
 }
+.table1{
+    display: flex;
+    justify-content: center;
+}
+table,td,tr,th{
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding: 0.8rem;
+}
+th{
+    padding: 1rem 2rem;
+
+}
 
 
 
