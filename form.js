@@ -1,5 +1,5 @@
 
-let entries = [];
+let entries = JSON.parse(localStorage.getItem("entries")); 
 
 function MyButton(event) {
     event.preventDefault();
@@ -12,7 +12,6 @@ function MyButton(event) {
 
     let valid = true;
 
-    // validation
     if (userName.trim() === "") {
         nameError.textContent = "Username is required*";
         nameError.style.color = "red";
@@ -29,12 +28,21 @@ function MyButton(event) {
         passwordError.style.fontSize = "13px";
         passwordError.style.paddingLeft = "15px";
         valid = false;
-    } else {
+    } 
+    else if (password.length < 8) {
+        passwordError.textContent = "Password must be at least 8 characters.";
+        passwordError.style.color = "red";
+        passwordError.style.fontSize = "13px";
+        passwordError.style.paddingLeft = "15px";
+        valid = false;
+    }
+    else {
         passwordError.textContent = '';
     }
 
     if (valid) {
         entries.push({ userName, password });
+        localStorage.setItem("entries", JSON.stringify(entries)); 
         renderTable();
         document.getElementById('form').reset();
     }
@@ -59,15 +67,19 @@ function renderTable() {
     }
     tableBody.innerHTML = rowsHTML;
 }
-// edit
 
 function editRow(index) {
     document.getElementById("userName").value = entries[index].userName;
     document.getElementById("password").value = entries[index].password;
     deleteRow(index);
 }
-// delete
+
 function deleteRow(index) {
     entries.splice(index, 1);
+    localStorage.setItem("entries", JSON.stringify(entries)); 
+    renderTable();
+}
+
+window.onload = function() {
     renderTable();
 }
